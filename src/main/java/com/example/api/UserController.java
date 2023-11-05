@@ -4,7 +4,6 @@ import com.example.api.model.User;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -12,6 +11,7 @@ import java.util.UUID;
 @RequestMapping("api/user")
 public class UserController {
 
+    // ну а как мне еще хранить, если нет базы
     private Map<UUID, User> userMap = new HashMap<>();
 
     @PostMapping("save")
